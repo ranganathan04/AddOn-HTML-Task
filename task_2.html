@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body
+    {
+        text-align: left;
+        color: white;
+        font-family: sans-serif;
+
+    }
+    form
+    {
+        background-color:cornflowerblue;
+        margin: 100px;
+        text-align: left;
+        padding: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;        
+    }
+</style>
+<body>
+    <h1 style="color: cornflowerblue; text-align: center;"><U>STUDENT REGISTRATION FORM</U></h1>
+    <form action="">
+        <label for="fname">FIRST NAME:</label> <input type="text" id="fname" name="fname"> (max 30 characters a-z and A-Z)<br><br>
+
+        <label for="lname">LAST NAME:</label> <input type="text" id="lname" name="lname"> (max 30 characters a-z and A-Z)<br><br>
+
+        <label for="dob">DATE OF BIRTH:</label> <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="email">EMAIL:</label> <input type="email" id="email" name="email"><br><br>
+
+        <label for="mno">MOBILE NO:</label> <input type="number" id="mno" name="mno"> (max 10 digits, no use +91 and others)<br><br>
+
+        <label>GENDER:</label>
+        <input type="radio" id="gender1" name="gender" value="Male">
+        <label for="gender1">MALE</label>
+        <input type="radio" id="gender2" name="gender" value="Female">
+        <label for="gender2">FEMALE</label><br><br>
+
+        <label for="address">ADDRESS:</label> <textarea style="resize:none;" name="address" id="address" rows="4" cols="40"></textarea><br><br>
+
+        <label for="city">CITY:</label> <input type="text" id="city" name="city"> (max 30 characters a-z and A-Z)<br><br>
+
+        <label for="pin">PIN CODE:</label>
+        <input type="number" id="pin" name="pin"> (max 6 digits)<br><br>
+
+        <label for="state">STATE:</label>
+        <input type="text" id="state" name="state"> (max 30 characters a-z and A-Z)<br><br>
+
+        <label for="country">COUNTRY:</label>
+        <input type="text" id="country" name="country"><br><br>
+
+        <label>HOBBIES:</label>
+        <input type="checkbox" id="h1" name="hobbies" value="Reading">
+        <label for="h1">READING</label>
+        <input type="checkbox" id="h2" name="hobbies" value="Gaming">
+        <label for="h2">GAMING</label>
+        <input type="checkbox" id="h3" name="hobbies" value="drawing">
+        <label for="h3">DRAWING</label>
+        <label for="h4">OTHERS</label> <input type="text" id="h4" name="hobbies">
+        <br><br>
+        QUALIFICATION   
+                        <table>
+                            <tr><th>SI.NO</th><th>Examination</th><th>Board</th><th>percentage</th><th>Year of Passing</th></tr>
+                            <tr><td>1</td><td>Class X</td><td><input type="text" id="xscl" name="xscl"></td><td><input type="number" id="xper" name="xper"></td><td><input type="number" name="xpass" id="xpass"></td></tr>
+                            <tr><td>2</td><td>Class XII</td><td><input type="text" id="xllscl" name="xllscl"></td><td><input type="number" id="xllper" name="xllper"></td><td><input type="number" name="xllpass" id="xllpass"></td></tr>
+                            <tr><td>3</td><td>Graduation</td><td><input type="text" id="ugscl" name="ugscl"></td><td><input type="number" id="ugper" name="ugper"></td><td><input type="number" name="ugpass" id="ugpass"></td></tr>
+                            <tr><td>4</td><td>Master</td><td><input type="text" id="pgscl" name="pgscl"></td><td><input type="number" id="pgper" name="pgper"></td><td><input type="number" name="pgpass" id="pgpass"></td></tr>
+
+                        </table><br>
+        <label for="coures">COURSEES
+            APPLIED FOR </label>    <input type="radio" name="coures" id="c1" value="bca">BCA<input type="radio" name="coures" id="c2" value="bcom">B.Com<input type="radio" name="coures" id="c3" value="bsc">B.Sc<input type="radio" name="coures" id="c4" value="ba">B.A <br><br>
+
+           <input type="submit" value="Submit"> <input type="reset" value="reset"> 
+    </form>
+    <li>
+        <ul></ul>
+    </li>
+</body>
+</html>

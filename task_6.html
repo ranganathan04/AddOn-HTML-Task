@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .table-container {
+            width: 80%;
+            max-width: 900px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+        }
+
+        thead {
+            background-color: #f7f7f7;
+            color: #555;
+            font-weight: bold;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .status {
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .status.open {
+            background-color: #f0ad4e;
+            color: white;
+        }
+
+        .status.progress {
+            background-color: #5cb85c;
+            color: white;
+        }
+
+        .status.on-hold {
+            background-color: #d9534f;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="table-container">
+        <h1>Table #09</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>INVOICE</th>
+                    <th>CUSTOMERS</th>
+                    <th>SHIP</th>
+                    <th>PRICE</th>
+                    <th>PREPAID PRICE</th>
+                    <th>STATUS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1491</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>$3000</td>
+                    <td>$2100</td>
+                    <td><span class="status progress">Progress</span></td>
+                </tr>
+                <tr>
+                    <td>1491</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>$3000</td>
+                    <td>$2100</td>
+                    <td><span class="status open">Open</span></td>
+                </tr>
+                <tr>
+                    <td>1491</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>$3000</td>
+                    <td>$2100</td>
+                    <td><span class="status on-hold">On hold</span></td>
+                </tr>
+                <tr>
+                    <td>1491</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>$3000</td>
+                    <td>$2100</td>
+                    <td><span class="status progress">Progress</span></td>
+                </tr>
+                <tr>
+                    <td>1491</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>$3000</td>
+                    <td>$2100</td>
+                    <td><span class="status on-hold">On hold</span></td>
+                </tr>
+                <tr>
+                    <td>1491</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>$3000</td>
+                    <td>$2100</td>
+                    <td><span class="status open">Open</span></td>
+                </tr>
+                <tr>
+                    <td>1491</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>$3000</td>
+                    <td>$2100</td>
+                    <td><span class="status open">Open</span></td>
+                </tr>
+                <tr>
+                    <td>1491</td>
+                    <td>Mark Otto</td>
+                    <td>Japan</td>
+                    <td>$3000</td>
+                    <td>$2100</td>
+                    <td><span class="status progress">Progress</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

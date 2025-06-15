@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Example</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #add8e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #4682b4;
+}
+
+.no-border-padding-margin {
+    border-width: 0;
+}
+
+.with-border {
+    border-width: 20px;
+}
+
+.with-padding {
+    border-width: 20px;
+    padding: 20px;
+    box-sizing: content-box; /* Ensures padding is added to the content size */
+}
+
+.with-margin {
+    border-width: 20px;
+    padding: 20px;
+    margin: 20px;
+    box-sizing: content-box;
+}
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <p>200 x 200</p>
+        <div class="box no-border-padding-margin">
+            <p>Width: 200<br>Height: 200<br>--------------------<br>Total: 200 x 200</p>
+        </div>
+        <p>200 x 200</p>
+
+        <div class="box with-border">
+            <p>Width: 200<br>Height: 200<br>Border: 20<br>--------------------<br>Total: 240 x 240</p>
+        </div>
+        <p>240 x 240</p>
+
+        <div class="box with-padding">
+            <p>Width: 200<br>Height: 200<br>Border: 20<br>Padding: 20<br>--------------------<br>Total: 280 x 280</p>
+        </div>
+        <p>280 x 280</p>
+
+        <div class="box with-margin">
+            <p>Width: 200<br>Height: 200<br>Border: 20<br>Padding: 20<br>Margin: 20<br>--------------------<br>Overall: 280 x 280</p>
+        </div>
+        <p>280 x 280</p>
+    </div>
+</body>
+</html>
